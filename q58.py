@@ -1,14 +1,13 @@
-list=[12,24,35,24,88,120,155,88,120,155]
+list1=[12,24,35,24,88,120,155,88,120,155]
 list2=[]
-list3=[]
-for i in list:
-  if list[i+1]!=list[i]:
-    list2.append(list)
 
+#  if list[i+1]!=list[i]:
+#    list2.append(list)
 print("without rep:")
+for i in list1:
+	if i not in list2:
+		list2.append(i)
 print(list2)
 print("Reverse without repetion:")
-for i in list2:
-	list3=list3+i
-print(list3)
-
+list2.reverse()
+print(list2)
